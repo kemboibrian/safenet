@@ -1,80 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Projects – Coming Soon | Safenet Installations</title>
-    <meta name="description" content="Explore a showcase of Safenet Installations' past and ongoing projects — coming soon. Stay tuned for real-world examples of our CCTV, networking, and security installations.">
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
-            color: #f0f0f0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | Safenet Installations</title>
+  <meta name="description" content="Explore completed projects by Safenet Installations in CCTV, networking, alarm systems, and more. We showcase reliable, modern security deployments tailored to residential and commercial needs.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/fontawesome.css" />
+  <link rel="stylesheet" href="css/custom-icons.css" />
+  <style>
+    .page-title-block {
+      background-color: #0d1117;
+      padding: 80px 0;
+      text-align: center;
+      color: #fff;
+    }
 
-        .coming-soon-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vh;
-            padding: 0 20px;
-        }
+    .projects-section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .coming-soon-container h1 {
-            font-size: 2.8rem;
-            color: #ffffff;
-            margin-bottom: 16px;
-        }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
 
-        .coming-soon-container p {
-            font-size: 1.15rem;
-            color: #c0c0c0;
-            max-width: 650px;
-            line-height: 1.6;
-        }
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      flex: 1 1 calc(50% - 15px);
+      transition: transform 0.2s ease;
+    }
 
-        .logo {
-            margin-bottom: 40px;
-        }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
 
-        .logo img {
-            max-height: 60px;
-        }
+    .project-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
 
-        .btn-home {
-            margin-top: 35px;
-            padding: 14px 28px;
-            background-color: #28a745;
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: background-color 0.3s ease;
-        }
+    .project-content {
+      padding: 20px;
+    }
 
-        .btn-home:hover {
-            background-color: #218838;
-        }
-    </style>
+    .project-content h3 {
+      margin-top: 0;
+      color: #1a1a1a;
+      font-size: 1.3rem;
+    }
+
+    .project-content p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .project-card {
+        flex: 1 1 100%;
+      }
+
+      .project-card img {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <div class="coming-soon-container">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/SAFE NET LOGOS/Logo.1.png" alt="Safenet Installations Logo" />
-            </a>
+  <!-- Navbar -->
+  <header class="main-header header-style-one">
+    <div class="top-header">
+      <div class="container">
+        <div class="left-info">
+          <p><i class="cameron-icon-email"></i><a href="mailto:info@safenetinstillations.com">info@safenetinstillations.com</a></p>
         </div>
-        <h1>Our Projects Page is Coming Soon</h1>
-        <p>We’re preparing to showcase a range of impactful installations we've completed — from advanced networking solutions to enterprise-grade security systems. Please check back soon.</p>
-        <a href="index.html" class="btn-home">Back to Home</a>
+        <div class="right-info">
+          <ul class="info-block">
+            <li><i class="cameron-icon-support"></i><a href="#">+254 794 437 386</a></li>
+            <li><a href="cart.html" class="cart-btn"><i class="cameron-icon-shopping-bag"></i><span class="count-text">(0)</span></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+      <div class="container clearfix">
+        <div class="logo-box clearfix">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/SAFE NET LOGOS/Logo.1.png" class="main-logo" alt="Awesome Image" />
+            <img src="images/SAFE NET LOGOS/Logo.1.png" class="stricky-logo" alt="Awesome Image" />
+          </a>
+          <button class="menu-toggler" data-target=".header-style-one .main-navigation">
+            <span class="fa fa-bars"></span>
+          </button>
+        </div>
+        <div class="main-navigation">
+          <ul class="navigation-box">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="services.html">Services</a>
+              <ul class="sub-menu">
+                <li><a href="cctv.html">CCTV Installation</a></li>
+                <li><a href="alarm.html">Alarm Systems</a></li>
+                <li><a href="access.html">Access Control Systems</a></li>
+                <li><a href="fire.html">Fire Detection Systems</a></li>
+                <li><a href="intercoms.html">Intercom Solutions</a></li>
+                <li><a href="electric.html">Electric Fencing</a></li>
+                <li><a href="networking.html">Networking</a></li>
+              </ul>
+            </li>
+            <li class="current"><a href="projects.html">Our Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right-side-box">
+          <div class="social">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-vimeo"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Title -->
+  <section class="page-title-block">
+    <div class="container">
+      <h1>Our Projects</h1>
+      <div class="thm-breadcrumb">
+        <a href="index.html" style="color: #bbb;">Home</a> / Projects
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+   <section class="projects-section">
+    <div class="container">
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="images/safenet/fcb.webp" alt="FCB Mihrab Building Project">
+          <div class="project-content">
+            <h3>FCB Mihrab Security System Installation</h3>
+            <p>Safenet Installations successfully deployed an integrated security system at FCB Mihrab in Nairobi. The solution included CCTV surveillance, access control, and alarm systems tailored for high-rise commercial buildings, enhancing real-time monitoring and safety compliance.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="images/safenet/Screenshot from 2025-06-30 08-30-06.png" alt="Okash Hotel Networking and CCTV">
+          <div class="project-content">
+            <h3>Okash Hotel CCTV & Networking</h3>
+            <p>At Okash Hotel, we implemented a robust CCTV surveillance system and a high-speed structured networking infrastructure. This project ensured reliable internet coverage and 24/7 video monitoring for both guest safety and operational efficiency.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="main-footer">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget about-widget">
+              <a href="index.html" class="footer-logo">
+                <img src="images/SAFE NET LOGOS/Logo.1.png" alt="awesome image">
+              </a>
+              <p>Safenet Installations delivers trusted security solutions — from CCTV and alarms to access control and electric fencing.</p>
+              <div class="social-block">
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-vimeo"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget links-widget">
+              <div class="footer-widget-title">
+                <h3>Services</h3>
+              </div>
+              <ul class="links-lists">
+                <li><a href="cctv.html">CCTV Installation</a></li>
+                <li><a href="alarm.html">Alarm Systems</a></li>
+                <li><a href="access.html">Access Control Systems</a></li>
+                <li><a href="fire.html">Fire Detection Systems</a></li>
+                <li><a href="intercoms.html">Intercom Solutions</a></li>
+                <li><a href="electric.html">Electric Fencing</a></li>
+                <li><a href="networking.html">Networking</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget links-widget">
+              <div class="footer-widget-title">
+                <h3>Quick Links</h3>
+              </div>
+              <ul class="links-lists">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">Our Projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget newsletter-widget">
+              <div class="footer-widget-title">
+                <h3>Newsletter</h3>
+              </div>
+              <form action="#" class="newsletter-form">
+                <p>Subscribe to our newsletter</p>
+                <input type="text" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer text-center">
+      <div class="container">
+        <p><a href="#">Safenet Installations</a> &copy; 2025 All Right Reserved</p>|
+        <p>Powered By <a href="https://www.axetech.africa/">AxeTech Africa</a></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
